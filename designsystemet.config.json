@@ -5,13 +5,12 @@
     "theme": {
       "colors": {
         "main": {
-          "accent": "#144696"
+          "accent": "#f28afb"
         },
         "support": {
-          "fbd036": "#FBD036",
-          "brand2": "#13856C"
+          "fbd036": "#FBD036"
         },
-        "neutral": "#333333"
+        "neutral": "#000000"
       },
       "borderRadius": 9999
     }
