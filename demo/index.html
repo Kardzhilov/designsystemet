@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Designsystemet Demo</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div class="demo-page">
+
+    <!-- Header -->
+    <header class="demo-header">
+      <h1 class="ds-heading" data-size="xl">Designsystemet Demo</h1>
+      <p class="ds-body" data-size="lg">
+        A live preview of your design tokens applied to Designsystemet components.
+      </p>
+      <div class="demo-scheme-toggle">
+        <button class="ds-button" data-variant="secondary" data-color="neutral" data-size="sm" id="toggle-scheme">
+          Toggle dark / light mode
+        </button>
+      </div>
+    </header>
+
+    <!-- Color Palette -->
+    <section class="demo-section">
+      <h2 class="ds-heading" data-size="md">Color Palette</h2>
+      <p class="ds-body" data-size="sm">Generated from your <code>designsystemet.config.json</code> theme colors.</p>
+
+      <h3 class="ds-heading" data-size="xs">Accent</h3>
+      <div class="demo-swatches" data-color="accent">
+        <div class="demo-swatch" style="background: var(--ds-color-accent-background-tinted)"><span>bg tinted</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-accent-surface-default); border: 1px solid var(--ds-color-accent-border-subtle)"><span>surface</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-accent-surface-hover)"><span>surface hover</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-accent-border-default)"><span>border</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-accent-base-default); color: var(--ds-color-accent-base-contrast-default)"><span>base</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-accent-base-hover); color: var(--ds-color-accent-base-contrast-default)"><span>base hover</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-accent-base-active); color: var(--ds-color-accent-base-contrast-default)"><span>base active</span></div>
+      </div>
+
+      <h3 class="ds-heading" data-size="xs">Neutral</h3>
+      <div class="demo-swatches" data-color="neutral">
+        <div class="demo-swatch" style="background: var(--ds-color-neutral-background-tinted)"><span>bg tinted</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-neutral-surface-default); border: 1px solid var(--ds-color-neutral-border-subtle)"><span>surface</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-neutral-surface-hover)"><span>surface hover</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-neutral-border-default)"><span>border</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-neutral-base-default); color: var(--ds-color-neutral-base-contrast-default)"><span>base</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-neutral-base-hover); color: var(--ds-color-neutral-base-contrast-default)"><span>base hover</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-neutral-base-active); color: var(--ds-color-neutral-base-contrast-default)"><span>base active</span></div>
+      </div>
+
+      <h3 class="ds-heading" data-size="xs">Support: fbd036 (Gold)</h3>
+      <div class="demo-swatches" data-color="fbd036">
+        <div class="demo-swatch" style="background: var(--ds-color-fbd036-background-tinted)"><span>bg tinted</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-fbd036-surface-hover)"><span>surface hover</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-fbd036-base-default); color: var(--ds-color-fbd036-base-contrast-default)"><span>base</span></div>
+        <div class="demo-swatch" style="background: var(--ds-color-fbd036-base-hover); color: var(--ds-color-fbd036-base-contrast-default)"><span>base hover</span></div>
+      </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="demo-section">
+      <h2 class="ds-heading" data-size="md">Buttons</h2>
+      <p class="ds-body" data-size="sm">The <code>.ds-button</code> component with different variants, colors, and sizes.</p>
+
+      <h3 class="ds-heading" data-size="xs">Variants (accent)</h3>
+      <div class="demo-row">
+        <button class="ds-button" data-color="accent">Primary</button>
+        <button class="ds-button" data-variant="secondary" data-color="accent">Secondary</button>
+        <button class="ds-button" data-variant="tertiary" data-color="accent">Tertiary</button>
+      </div>
+
+      <h3 class="ds-heading" data-size="xs">Variants (neutral)</h3>
+      <div class="demo-row">
+        <button class="ds-button" data-color="neutral">Primary</button>
+        <button class="ds-button" data-variant="secondary" data-color="neutral">Secondary</button>
+        <button class="ds-button" data-variant="tertiary" data-color="neutral">Tertiary</button>
+      </div>
+
+      <h3 class="ds-heading" data-size="xs">Variants (fbd036 support color)</h3>
+      <div class="demo-row" data-color="fbd036">
+        <button class="ds-button">Primary</button>
+        <button class="ds-button" data-variant="secondary">Secondary</button>
+        <button class="ds-button" data-variant="tertiary">Tertiary</button>
+      </div>
+
+      <h3 class="ds-heading" data-size="xs">Sizes</h3>
+      <div class="demo-row">
+        <div data-size="sm"><button class="ds-button" data-color="accent">Small</button></div>
+        <div data-size="md"><button class="ds-button" data-color="accent">Medium</button></div>
+        <div data-size="lg"><button class="ds-button" data-color="accent">Large</button></div>
+      </div>
+
+      <h3 class="ds-heading" data-size="xs">Disabled</h3>
+      <div class="demo-row">
+        <button class="ds-button" data-color="accent" disabled>Disabled Primary</button>
+        <button class="ds-button" data-variant="secondary" data-color="accent" disabled>Disabled Secondary</button>
+      </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="demo-section">
+      <h2 class="ds-heading" data-size="md">Typography</h2>
+      <p class="ds-body" data-size="sm">Headings and body text at different size modes.</p>
+
+      <div class="demo-typography-grid">
+        <div>
+          <h3 class="ds-heading" data-size="2xl">Heading 2XL</h3>
+          <h3 class="ds-heading" data-size="xl">Heading XL</h3>
+          <h3 class="ds-heading" data-size="lg">Heading LG</h3>
+          <h3 class="ds-heading" data-size="md">Heading MD</h3>
+          <h3 class="ds-heading" data-size="sm">Heading SM</h3>
+          <h3 class="ds-heading" data-size="xs">Heading XS</h3>
+          <h3 class="ds-heading" data-size="2xs">Heading 2XS</h3>
+        </div>
+        <div>
+          <p class="ds-body" data-size="xl">Body XL — The quick brown fox jumps.</p>
+          <p class="ds-body" data-size="lg">Body LG — The quick brown fox jumps.</p>
+          <p class="ds-body" data-size="md">Body MD — The quick brown fox jumps.</p>
+          <p class="ds-body" data-size="sm">Body SM — The quick brown fox jumps.</p>
+          <p class="ds-body" data-size="xs">Body XS — The quick brown fox jumps.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form components -->
+    <section class="demo-section">
+      <h2 class="ds-heading" data-size="md">Form Components</h2>
+
+      <div class="demo-form-grid">
+        <!-- Textfield -->
+        <div class="ds-field">
+          <label class="ds-label" for="name-input">Name</label>
+          <p class="ds-field__description">Enter your full name</p>
+          <input class="ds-input" type="text" id="name-input" placeholder="Ola Nordmann" />
+        </div>
+
+        <!-- Textfield with error -->
+        <div class="ds-field" data-invalid>
+          <label class="ds-label" for="email-input">Email</label>
+          <input class="ds-input" type="email" id="email-input" value="not-an-email" aria-invalid="true" aria-describedby="email-error" />
+          <p class="ds-field__error-message" id="email-error">Please enter a valid email address.</p>
+        </div>
+
+        <!-- Textarea -->
+        <div class="ds-field">
+          <label class="ds-label" for="message-input">Message</label>
+          <textarea class="ds-textarea" id="message-input" rows="3" placeholder="Write something…"></textarea>
+        </div>
+
+        <!-- Select -->
+        <div class="ds-field">
+          <label class="ds-label" for="theme-select">Favorite theme</label>
+          <select class="ds-select" id="theme-select">
+            <option value="">Choose…</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="auto">Auto</option>
+          </select>
+        </div>
+
+        <!-- Checkbox -->
+        <fieldset class="ds-fieldset">
+          <legend class="ds-fieldset__legend">Options</legend>
+          <div class="ds-field" data-type="checkbox">
+            <input class="ds-checkbox" type="checkbox" id="check1" checked />
+            <label class="ds-label" for="check1">Enable notifications</label>
+          </div>
+          <div class="ds-field" data-type="checkbox">
+            <input class="ds-checkbox" type="checkbox" id="check2" />
+            <label class="ds-label" for="check2">Subscribe to newsletter</label>
+          </div>
+        </fieldset>
+
+        <!-- Radio -->
+        <fieldset class="ds-fieldset">
+          <legend class="ds-fieldset__legend">Contact preference</legend>
+          <div class="ds-field" data-type="radio">
+            <input class="ds-radio" type="radio" id="radio1" name="contact" checked />
+            <label class="ds-label" for="radio1">Email</label>
+          </div>
+          <div class="ds-field" data-type="radio">
+            <input class="ds-radio" type="radio" id="radio2" name="contact" />
+            <label class="ds-label" for="radio2">Phone</label>
+          </div>
+          <div class="ds-field" data-type="radio">
+            <input class="ds-radio" type="radio" id="radio3" name="contact" />
+            <label class="ds-label" for="radio3">Post</label>
+          </div>
+        </fieldset>
+
+        <!-- Switch -->
+        <div class="ds-field" data-type="checkbox">
+          <input class="ds-switch" type="checkbox" id="switch1" role="switch" />
+          <label class="ds-label" for="switch1">Dark mode</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards / Alert-like boxes -->
+    <section class="demo-section">
+      <h2 class="ds-heading" data-size="md">Alerts</h2>
+      <p class="ds-body" data-size="sm">Severity-based alert components.</p>
+
+      <div class="demo-alerts">
+        <div class="ds-alert" data-color="info">
+          <p class="ds-body" data-size="sm">This is an <strong>info</strong> alert — just some helpful context.</p>
+        </div>
+        <div class="ds-alert" data-color="success">
+          <p class="ds-body" data-size="sm">This is a <strong>success</strong> alert — everything went well!</p>
+        </div>
+        <div class="ds-alert" data-color="warning">
+          <p class="ds-body" data-size="sm">This is a <strong>warning</strong> alert — please pay attention.</p>
+        </div>
+        <div class="ds-alert" data-color="danger">
+          <p class="ds-body" data-size="sm">This is a <strong>danger</strong> alert — something went wrong.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="demo-section">
+      <h2 class="ds-heading" data-size="md">Cards</h2>
+      <p class="ds-body" data-size="sm">Simple card layouts using <code>.ds-card</code>.</p>
+
+      <div class="demo-card-grid">
+        <div class="ds-card" data-color="accent">
+          <div class="ds-card__content">
+            <h3 class="ds-heading" data-size="sm">Accent Card</h3>
+            <p class="ds-body" data-size="sm">Built with your accent color token, border-radius 9999.</p>
+          </div>
+        </div>
+        <div class="ds-card" data-color="neutral">
+          <div class="ds-card__content">
+            <h3 class="ds-heading" data-size="sm">Neutral Card</h3>
+            <p class="ds-body" data-size="sm">The neutral palette, derived from #000000.</p>
+          </div>
+        </div>
+        <div class="ds-card" data-color="fbd036">
+          <div class="ds-card__content">
+            <h3 class="ds-heading" data-size="sm">Gold Card</h3>
+            <p class="ds-body" data-size="sm">Support color fbd036 (#FBD036).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tag / Badge -->
+    <section class="demo-section">
+      <h2 class="ds-heading" data-size="md">Tags &amp; Badges</h2>
+      <div class="demo-row">
+        <span class="ds-tag" data-color="accent">Accent</span>
+        <span class="ds-tag" data-color="neutral">Neutral</span>
+        <span class="ds-tag" data-color="fbd036">Gold</span>
+        <span class="ds-tag" data-color="info">Info</span>
+        <span class="ds-tag" data-color="success">Success</span>
+        <span class="ds-tag" data-color="warning">Warning</span>
+        <span class="ds-tag" data-color="danger">Danger</span>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <section class="demo-section">
+      <h2 class="ds-heading" data-size="md">Divider</h2>
+      <p class="ds-body" data-size="sm">A simple horizontal rule.</p>
+      <hr class="ds-divider" />
+      <p class="ds-body" data-size="sm">Content below the divider.</p>
+    </section>
+
+    <!-- Spinner -->
+    <section class="demo-section">
+      <h2 class="ds-heading" data-size="md">Spinner</h2>
+      <div class="demo-row">
+        <div data-size="sm"><div class="ds-spinner" aria-label="Loading"></div></div>
+        <div data-size="md"><div class="ds-spinner" aria-label="Loading"></div></div>
+        <div data-size="lg"><div class="ds-spinner" aria-label="Loading"></div></div>
+      </div>
+    </section>
+
+    <!-- Size mode demo -->
+    <section class="demo-section">
+      <h2 class="ds-heading" data-size="md">Size Modes</h2>
+      <p class="ds-body" data-size="sm">Wrap any section in <code>data-size</code> to change the size mode.</p>
+
+      <div class="demo-size-modes">
+        <div data-size="sm" class="demo-size-box">
+          <h4 class="ds-heading" data-size="xs">Small mode</h4>
+          <button class="ds-button" data-color="accent">Button</button>
+          <input class="ds-input" placeholder="Input" />
+        </div>
+        <div data-size="md" class="demo-size-box">
+          <h4 class="ds-heading" data-size="xs">Medium mode</h4>
+          <button class="ds-button" data-color="accent">Button</button>
+          <input class="ds-input" placeholder="Input" />
+        </div>
+        <div data-size="lg" class="demo-size-box">
+          <h4 class="ds-heading" data-size="xs">Large mode</h4>
+          <button class="ds-button" data-color="accent">Button</button>
+          <input class="ds-input" placeholder="Input" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="demo-footer">
+      <p class="ds-body" data-size="xs">
+        Tokens defined in <code>designsystemet.config.json</code> &middot;
+        Components from <code>@digdir/designsystemet-css</code> &middot;
+        Behaviors from <code>@digdir/designsystemet-web</code>
+      </p>
+    </footer>
+
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

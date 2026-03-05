@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@digdir/designsystemet-css": "^1.12.1",
+    "@digdir/designsystemet-web": "^1.12.1"
+  }
+}
