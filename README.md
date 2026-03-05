@@ -97,10 +97,3 @@ npm run preview
 - **Dark / light mode toggle** — switches `data-color-scheme` on `<html>` to verify both color schemes
 
 ---
-
-## Documentation
-
-| File | Contents |
-|---|---|
-| [`designsystemet-explained.md`](designsystemet-explained.md) | Deep-dive: how tokens, components, and Figma work together |
-| [`tokens-create-vs-build-research.md`](tokens-create-vs-build-research.md) | `tokens create` vs `tokens build` — internals, when to use each, full runbook |
