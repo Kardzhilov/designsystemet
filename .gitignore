@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+demo/node_modules/
+
+# Demo build output
+demo/dist/
+
+# Vite cache
+demo/.vite/
+**/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
